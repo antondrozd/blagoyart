@@ -23,5 +23,14 @@ $line-height-h2: 37px;
 $font-size-h3: 28px;
 $line-height-h3: 32px;
 
+// media
+$tablet-widths: "(min-width: 768px)";
+$tablet-landscape-widths: "(min-width: 1024px)";
+$desktop-widths: "(min-width: 1200px)";
+$desktop-large-widths: "(min-width: 1400px)";
+$mobile-widths-only: "(max-width: 767px)";
+
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
+
 //header
 $header-item-flex-basis-mobile: 53px;
