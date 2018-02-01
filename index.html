@@ -28,7 +28,10 @@
 
   	<header class="main-header">
   		<div class="main-header__wrapper">
-        <div class="logo"></div>
+        <div class="logo  main-header__logo">
+          <img src="img/logo.png">
+          Интернет-магазин «Благой арт»
+        </div>
         <nav class="main-nav">
           <button class="main-nav__toggle"></button>
           <ul class="main-nav__list">
@@ -89,18 +92,23 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="main-header__home"></a>
-        <div class="main-header__search  search-field">
+        <a href="#" class="main-header__home">
+          <span class="main-header__home-icon"></span>
+        </a>
+        <div class="search-field  main-header__search">
+          <span class="main-header__search-icon"></span>
           <input type="text" placeholder="Введите название или артикул">
           <button class="search-field__btn" type="button"></button>
         </div>
         <ul class="user-block">
-          <li class="user-block__item  basket">
+          <li class="user-block__item  main-header__user-block-item  basket">
+            <span class="main-header__basket-icon"></span>
             <a href="#">
               <span class="basket__count">10</span> ТОВАРОВ / 56 789 Р
             </a>
           </li>
-          <li class="user-block__item">
+          <li class="user-block__item  main-header__user-block-item">
+            <span class="main-header__user-icon"></span>
             <a href="#">ВОЙТИ</a>
           </li>
         </ul>
