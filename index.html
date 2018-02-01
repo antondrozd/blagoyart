@@ -26,9 +26,91 @@
 
   <!-- BEGIN HEADER -->
 
-  	<header>
-  		<div class="wrapper">
-
+  	<header class="main-header">
+  		<div class="main-header__wrapper">
+        <div class="logo"></div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--with-sub-list">
+              <a href="#">КАТАЛОГ ТОВАРОВ</a>
+              <ul class="main-nav__sub-list-lvl1">
+                <li class="main-nav__sub-item-lvl1">
+                  <a href="#">Свадебная бижутерия</a>
+                </li>
+                <li class="main-nav__sub-item-lvl1">
+                  <a href="#">Аксессуары для волос</a>
+                </li>
+                <li class="main-nav__sub-item-lvl1">
+                  <a href="#">Броши</a>
+                </li>
+                <li class="main-nav__sub-item-lvl1  main-nav__sub-item-lvl1--with-sub-list">
+                  <a href="#">Мужские аксессуары</a>
+                  <ul class="main-nav__sub-list-lvl2">
+                    <li class="main-nav__sub-item-lvl2">
+                      <h3 class="main-nav__sub-list-lvl2-title">МУЖСКАЯ БИЖУТЕРИЯ</h3>
+                    </li>
+                    <li class="main-nav__sub-item-lvl2">
+                      <a href="#">Браслеты</a>
+                    </li>
+                    <li class="main-nav__sub-item-lvl2">
+                      <a href="#">Кулоны</a>
+                    </li>
+                    <li class="main-nav__sub-item-lvl2">
+                      <a href="#">Зажимы и запонки</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-nav__sub-item-lvl1">
+                  <a href="#">Клатчи</a>
+                </li>
+                <li class="main-nav__sub-item-lvl1">
+                  <a href="#">Детская бижутерия</a>
+                </li>
+                <li class="main-nav__sub-item-lvl1">
+                  <a href="#">Демонстрационное оборудование</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">УСЛОВИЯ РАБОТЫ</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">СКИДКИ</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">ОПЛАТА И ДОСТАВКА</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">ДОКУМЕНТЫ</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="main-header__home"></a>
+        <div class="main-header__search  search-field">
+          <input type="text" placeholder="Введите название или артикул">
+          <button class="search-field__btn" type="button"></button>
+        </div>
+        <ul class="user-block">
+          <li class="user-block__item  basket">
+            <a href="#">
+              <span class="basket__count">10</span> ТОВАРОВ / 56 789 Р
+            </a>
+          </li>
+          <li class="user-block__item">
+            <a href="#">ВОЙТИ</a>
+          </li>
+        </ul>
+        <div class="contact-info">
+          <a class="contact-info__phone" href="tel:78007078139">+7 (800) 707-81-39</a>
+          <div class="contact-info__inner">
+            <span class="contact-info__working-time">ПН-ПТ с 9:00 до 18:00</span>
+            <span class="contact-info__shipping">Доставка по РФ и СНГ</span>
+          </div>
+        </div>
   		</div>
   	</header>
 
