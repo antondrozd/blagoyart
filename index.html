@@ -29,10 +29,10 @@
   	<header class="main-header">
   		<div class="main-header__wrapper">
         <div class="logo  main-header__logo">
-          <img src="img/logo.png">
+          <img src="img/logo.png" alt="logo">
           Интернет-магазин «Благой арт»
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav  main-header__main-nav">
           <button class="main-nav__toggle"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--with-sub-list">
@@ -92,28 +92,28 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="main-header__home">
-          <span class="main-header__home-icon"></span>
+        <a href="#" class="main-header__home  main-header__icon-wrapper">
+          <span class="main-header__icon  main-header__icon--home"></span>
         </a>
-        <div class="search-field  main-header__search">
-          <span class="main-header__search-icon"></span>
-          <input type="text" placeholder="Введите название или артикул">
-          <button class="search-field__btn" type="button"></button>
+        <div class="search-field  main-header__search-field  main-header__icon-wrapper">
+          <span class="main-header__icon  main-header__icon--search"></span>
+          <div class="search-field__wrapper">
+            <input type="text" placeholder="Введите название или артикул">
+            <button class="search-field__btn" type="button"></button>
+          </div>
         </div>
-        <ul class="user-block">
-          <li class="user-block__item  main-header__user-block-item  basket">
-            <span class="main-header__basket-icon"></span>
-            <a href="#">
+        <ul class="user-block  main-header__user-block">
+          <li class="user-block__item  main-header__icon-wrapper  basket">
+            <a class="main-header__icon  main-header__icon--basket" href="#">
               <span class="basket__count">10</span> ТОВАРОВ / 56 789 Р
             </a>
           </li>
-          <li class="user-block__item  main-header__user-block-item">
-            <span class="main-header__user-icon"></span>
-            <a href="#">ВОЙТИ</a>
+          <li class="user-block__item  main-header__icon-wrapper">
+            <a class="main-header__icon  main-header__icon--user" href="#">ВОЙТИ</a>
           </li>
         </ul>
-        <div class="contact-info">
-          <a class="contact-info__phone" href="tel:78007078139">+7 (800) 707-81-39</a>
+        <div class="contact-info  main-header__contact-info  main-header__icon-wrapper">
+          <a class="contact-info__phone  main-header__icon  main-header__icon--contact" href="tel:78007078139">+7 (800) 707-81-39</a>
           <div class="contact-info__inner">
             <span class="contact-info__working-time">ПН-ПТ с 9:00 до 18:00</span>
             <span class="contact-info__shipping">Доставка по РФ и СНГ</span>

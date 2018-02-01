@@ -1,7 +1,16 @@
 .logo {
   letter-spacing: -0.5px;
+  color: #747688;
   img {
     display: block;
     margin-bottom: 6px;
+  }
+}
+
+@media #{$tablet-widths} {
+  .logo {
+    img {
+      width: 179px;
+    }
   }
 }

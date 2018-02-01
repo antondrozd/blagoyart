@@ -1,18 +1,3 @@
 .user-block {
   display: flex;
-  flex-basis: $header-item-flex-basis-mobile * 2;
-  flex-grow: 2;
-  > * {
-    flex-basis: $header-item-flex-basis-mobile;
-    flex-grow: 1;
-  }
-}
-
-.user-block__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  > * {
-    display: none;
-  }
 }

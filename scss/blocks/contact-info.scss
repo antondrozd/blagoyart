@@ -1,18 +1,34 @@
-.contact-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  > * {
-    display: none;
-  }
+.contact-info__phone {
+  font-size: 0;
 }
 
-.contact-info__phone {
-  display: block !important;
-  width: 16px;
-  height: 17px;
-  font-size: 0;
-  background-image: url('../img/icons/icons-sprite.png');
-  background-repeat: no-repeat;
-  background-position: -47px -46px;
+@media #{$tablet-widths} {
+
+  .contact-info {
+    flex-basis: 255px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-info__phone {
+    width: auto;
+    height: auto;
+    margin-right: 18px;
+    font-size: 15.5px;
+    letter-spacing: -0.7px;
+    white-space: nowrap;
+    color: #181616;
+    background-image: none;
+  }
+
+  .contact-info__working-time {
+    font-size: 9.9px;
+    color: #cb944c;
+  }
+
+  .contact-info__shipping {
+    font-size: 9.9px;
+    color: #2b3056;
+  }
+
 }
