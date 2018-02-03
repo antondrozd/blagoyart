@@ -15,7 +15,7 @@
     height: auto;
     margin-right: 18px;
     font-size: 15.5px;
-    letter-spacing: -0.7px;
+    letter-spacing: -0.2px;
     white-space: nowrap;
     color: $dark-color;
     background-image: none;
@@ -31,6 +31,27 @@
     font-size: 9.9px;
     letter-spacing: -0.3px;
     color: $dark-blue-color;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .contact-info__phone {
+    font-size: 22.3px;
+    letter-spacing: 0.5px;
+  }
+
+  .contact-info__working-time {
+    font-size: 14px;
+    letter-spacing: -0.6px;
+    white-space: nowrap;
+  }
+
+  .contact-info__shipping {
+    font-size: 13.9px;
+    letter-spacing: -0.7px;
+    white-space: nowrap;
   }
 
 }

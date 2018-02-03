@@ -1,6 +1,9 @@
 .logo {
-  letter-spacing: -0.5px;
-  color: #747688;
+  a {
+    display: block;
+    letter-spacing: -0.5px;
+    color: #747688;
+  }
   img {
     display: block;
     margin-bottom: 6px;
@@ -13,4 +16,17 @@
       width: 179px;
     }
   }
+}
+
+@media #{$desktop-widths} {
+
+  .logo {
+    a {
+      letter-spacing: -0.1px;
+    }
+    img {
+      width: 247px;
+    }
+  }
+
 }

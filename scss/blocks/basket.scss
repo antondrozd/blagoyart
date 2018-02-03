@@ -3,6 +3,7 @@
   .basket {
     position: relative;
     padding-left: 21px;
+    letter-spacing: 0.3px;
     a {
       font-size: 10.16px;
     }
@@ -37,3 +38,28 @@
 
 }
 
+@media #{$desktop-widths} {
+
+  .basket {
+    padding-left: 32px;
+    letter-spacing: 0.8px;
+    a {
+      font-size: 14.4px;
+    }
+    &::before {
+      width: 23px;
+      height: 23px;
+      background-image: url("../img/icons/icons-sprite-desktop.png");
+      background-position: -10px -10px;
+    }
+  }
+
+  .basket__count {
+    padding: 5px;
+  }
+
+  .basket__sum {
+    font-size: 14.4px;
+  }
+
+}

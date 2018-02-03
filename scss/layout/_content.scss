@@ -5,6 +5,7 @@
 	padding: 0 0 0 0;
 	min-width: $min-width;
     width: 100%;
+  max-width: $max-width;
 	position: relative;
 	overflow: hidden;
 	min-height:100%;
@@ -20,6 +21,7 @@
     -webkit-justify-content:flex-start;
     -ms-flex-pack: start;
 }
+
 .wrapper{
 	min-width: $min-width;
 	max-width: $max-width;
@@ -71,7 +73,7 @@ h3{
 |                                     CONTENT                                 |
 ================================================================================
 */
-.content{
+main {
 	min-width: $min-width;
 	text-align:left;
     width: 100%;

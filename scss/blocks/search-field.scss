@@ -17,6 +17,10 @@
     }
   }
 
+  .search-field__wrapper {
+    position: relative;
+  }
+
   .search-field__btn {
     position: absolute;
     top: 50%;
@@ -30,6 +34,24 @@
     background-position: -44px -45px;
     border: none;
     transform: translateY(-50%);
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .search-field {
+    input {
+      padding: 9.7px;
+      font-size: 14.4px;
+    }
+  }
+
+  .search-field__btn {
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icons/icons-sprite-desktop.png");
+    background-position: -53px -10px;
   }
 
 }
