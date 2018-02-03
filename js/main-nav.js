@@ -56,10 +56,8 @@ $(function () {
   $(window).resize(() => {
     isTablet = 768 <= $(window).width() && $(window).width() <= 1200;;
     if (isTablet) {
-      console.log('tablet');
       menuHandler();
     } else {
-      console.log('no-tablet');
       clearStyles();
       body.off('click');
     }
