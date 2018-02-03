@@ -1,3 +1,37 @@
 .user-block {
   display: flex;
 }
+
+@media #{$tablet-widths} {
+
+  .user-block__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-of-type) {
+      margin-right: 14px;
+    }
+    a {
+      font-size: 12.7px;
+      font-weight: bold;
+      color: $dark-blue-color;
+    }
+  }
+
+  .user-block__login {
+    position: relative;
+    padding-left: 21px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 16px;
+      height: 14px;
+      background-image: url("../img/icons/icons-sprite-tablet.png");
+      background-repeat: no-repeat;
+      background-position: -45px -10px;
+      transform: translateY(-50%);
+    }
+  }
+
+}

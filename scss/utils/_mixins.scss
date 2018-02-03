@@ -88,7 +88,7 @@
 @mixin wrapper() {
   width: auto;
   @media #{$tablet-widths} {
-    padding: 0 1.5%;
+    padding: 0 3.9%;
   }
   @media #{$desktop-widths} {
     max-width: 1354px;

@@ -86,7 +86,7 @@
     order: 0;
     margin-top: 0;
     margin-right: 41px;
-    margin-left: 18px;
+    margin-left: 0;
   }
 
   .main-header__icon-wrapper {
@@ -103,7 +103,11 @@
   }
 
   .main-header__icon {
-    &:not(.contact-info__phone) {
+    // display prop must be used with !important
+    width: auto;
+    height: auto;
+    background-image: none;
+    &--mobile-only {
       display: none !important;
     }
   }
@@ -125,9 +129,12 @@
   }
 
   .main-header__user-block {
-    flex-basis: 237px;
+    // flex-basis: 237px;
+    flex-basis: 100%;
     order: 2;
-    margin-left: auto;
+    justify-content: flex-end;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   .main-header__contact-info {

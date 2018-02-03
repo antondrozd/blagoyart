@@ -5,7 +5,7 @@
 @media #{$tablet-widths} {
 
   .contact-info {
-    flex-basis: 255px;
+    flex-basis: 237px;
     display: flex;
     align-items: center;
   }
@@ -17,18 +17,20 @@
     font-size: 15.5px;
     letter-spacing: -0.7px;
     white-space: nowrap;
-    color: #181616;
+    color: $dark-color;
     background-image: none;
   }
 
   .contact-info__working-time {
     font-size: 9.9px;
-    color: #cb944c;
+    letter-spacing: -0.2px;
+    color: $light-brown-color;
   }
 
   .contact-info__shipping {
     font-size: 9.9px;
-    color: #2b3056;
+    letter-spacing: -0.3px;
+    color: $dark-blue-color;
   }
 
 }

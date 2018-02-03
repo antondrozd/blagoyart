@@ -1,0 +1,39 @@
+@media #{$tablet-widths} {
+
+  .basket {
+    position: relative;
+    padding-left: 21px;
+    a {
+      font-size: 10.16px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background-image: url("../img/icons/icons-sprite-tablet.png");
+      background-repeat: no-repeat;
+      background-position: -10px -10px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .basket__count {
+    display: inline-block;
+    padding: 3px;
+    margin-right: 4px;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #fff;
+    background-color: $light-brown-color;
+    border-radius: 50%;
+  }
+
+  .basket__sum {
+    font-size: 12.7px;
+  }
+
+}
+
