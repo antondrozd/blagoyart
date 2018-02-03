@@ -1,6 +1,6 @@
 $(function () {
 
-  var isTablet = 768 < $(window).width() && $(window).width() < 1200,
+  var isTablet = 768 <= $(window).width() && $(window).width() <= 1200,
       subLists = $('ul[class*="main-nav__sub-list"]') || null,
       body = $('body');
 
@@ -29,7 +29,7 @@ $(function () {
       isOpenedSomeList = false;
     }
 
-    body.on('click', function (event) {
+    var checkTarget = () => {
       target = event.target;
 
       if (!$(target).is($('.main-nav__item > a')) && !$(target).is(subBtnsLvl1.find('a'))) {
@@ -42,16 +42,24 @@ $(function () {
         var listToOpen = $(target).next('ul[class*="main-nav__sub-list"]');
         openSubMenu(listToOpen);
       }
+    }
+
+    body.on('click', (event) => {
+      checkTarget();
     });
   }
 
-  menuHandler();
+  if (isTablet) {
+    menuHandler();
+  }
 
   $(window).resize(() => {
-    isTablet = 768 < $(window).width() && $(window).width() < 1200;;
+    isTablet = 768 <= $(window).width() && $(window).width() <= 1200;;
     if (isTablet) {
+      console.log('tablet');
       menuHandler();
     } else {
+      console.log('no-tablet');
       clearStyles();
       body.off('click');
     }
