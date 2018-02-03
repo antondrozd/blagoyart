@@ -94,6 +94,82 @@
         border: 1px solid transparent;
     }
 }
-.slick-arrow.slick-hidden {
-    display: none;
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 28px;
+  font-size: 0;
+  background-color: rgba(#d2a66b, 0.88);
+  background-image: url("../img/slider-arrow-left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  transform: translateY(-50%);
+  z-index: 2;
+  &:hover {
+    background-color: #fff;
+    background-image: url("../img/slider-arrow-right--active.png");
+  }
+  &.slick-prev {
+    left: 0;
+    &:hover {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+  &.slick-next {
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+    &:hover {
+      transform: translateY(-50%);
+    }
+  }
+  &.slick-disabled {
+    opacity: 0.5;
+  }
+
+  @media #{$tablet-widths} {
+    width: 21px;
+    height: 65px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 37px;
+    height: 128px;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 98px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transform: translateX(-50%);
+  li {
+    &.slick-active {
+      button {
+        background-color: #cb944c;
+      }
+    }
+    &:not(.slick-active):hover {
+      button {
+        background-color: rgba(#cb944c, 0.6);
+      }
+    }
+    button {
+      width: 18px;
+      height: 18px;
+      padding: 0;
+      font-size: 0;
+      background-color: rgba(#cb944c, 0.33);
+      border: none;
+      border-radius: 50%;
+    }
+  }
 }

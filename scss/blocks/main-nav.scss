@@ -118,9 +118,11 @@
     padding-bottom: 28px;
     margin: 0;
     list-style: none;
+    background-color: #fff;
     box-shadow: 1.5px 2.6px 1px 0 rgba(108, 104, 104, 0.33);
     border: solid 1px #dddfdf;
     border-radius: 3px;
+    z-index: 3;
     &::before {
       content: "";
       position: absolute;
@@ -143,9 +145,11 @@
     padding-top: 10px;
     padding-bottom: 17px;
     list-style: none;
+    background-color: #fff;
     box-shadow: 1.5px 2.6px 1px 0 rgba(108, 104, 104, 0.33);
     border: solid 0.4px #dddfdf;
     border-radius: 3px;
+    z-index: 3;
     &::before {
       content: "";
       position: absolute;

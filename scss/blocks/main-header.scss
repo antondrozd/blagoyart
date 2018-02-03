@@ -1,3 +1,7 @@
+.main-header {
+  margin-bottom: 19px;
+}
+
 .main-header__wrapper {
   @include wrapper();
   display: flex;
@@ -143,6 +147,10 @@
 }
 
 @media #{$desktop-widths} {
+
+  .main-header {
+    margin-bottom: 32px;
+  }
 
   .main-header__wrapper {
     justify-content: space-between;
