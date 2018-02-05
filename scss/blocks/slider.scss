@@ -15,16 +15,21 @@
   font-size: 15.24px;
   line-height: 17.78px;
   font-weight: normal;
+  letter-spacing: 0.5px;
   color: #fff;
   background-color: rgba(#d2a66b, 0.88);
 }
 
 @media #{$tablet-widths} {
 
+  .slider {
+    margin: 0 1.7%;
+  }
+
   .slider__slide-title {
     top: 50%;
     left: 40px;
-    width: 290px;
+    width: 285px;
     padding: 10px 17px;
     font-size: 22.86px;
     line-height: 24.12px;
@@ -34,6 +39,10 @@
 }
 
 @media #{$desktop-widths} {
+
+  .slider {
+    margin: 0;
+  }
 
   .slider__slide-title {
     top: 99px;

@@ -115,7 +115,7 @@
     display: none;
     width: 244px;
     padding-top: 14px;
-    padding-bottom: 28px;
+    padding-bottom: 20px;
     margin: 0;
     list-style: none;
     background-color: #fff;
@@ -168,7 +168,6 @@
     margin-bottom: 2px;
     font-family: $base-font-family;
     font-size: 15.2px;
-    letter-spacing: -1px;
     font-weight: bold;
     color: $light-brown-color;
   }
@@ -243,6 +242,16 @@
 
   .main-nav__sub-list-lvl2 {
     padding-bottom: 21px;
+  }
+
+  .main-nav__sub-list-lvl2-title {
+    letter-spacing: 0.6px;
+  }
+
+  .main-nav__sub-item {
+    > a {
+      padding-left: 35px;
+    }
   }
 
   [class*="--with-sub-list"] {
